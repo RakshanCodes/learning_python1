@@ -5,7 +5,7 @@ description = "Add a short description here"
 authors = [
     { name = "dhilipsiva", email = "dhilipsiva@pm.me" }
 ]
-dependencies = []
+dependencies = ["black~=23.10.1"]
 readme = "README.md"
 requires-python = ">= 3.8"
 license = { text = "MIT" }
