@@ -9,9 +9,6 @@ class Bikes:
     def add_items(self, items):
         self.items.append(items)
 
-    # def cost(self):
-    #     return self.cost
-
 
 class Highness(Bikes):
     def __init__(
