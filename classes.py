@@ -23,11 +23,11 @@ class BedRoom(Room):
         super(BedRoom, self).__init__(
             f"{name} bedroom", length, breath, ["bed"])
 
-
+    
 class BathRoom(Room):
     def __init__(self, name, length, breath):
         super(BathRoom, self).__init__(
-            f"{name} batthroom", length, breath, ["bucket"])
+            f"{name} bathroom", length, breath, ["bucket"])
 
 
 r1 = BedRoom("master", 20, 12)
