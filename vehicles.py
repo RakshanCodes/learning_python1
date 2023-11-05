@@ -21,13 +21,13 @@ class Bikes:
         return self.color
 
 
-class highness(Bikes):
+class Highness(Bikes):
     def __init__(
         self,
         name,
     ):
         super(
-            highness,
+            Highness,
             self,
         )._init_(f"{name} Honda highness", ["Honda"])
 
@@ -37,7 +37,7 @@ class BMW(Bikes):
         super(BMW, self)._init_(f"{name} BMW", ["BMW"])
 
 
-v1 = highness("Favourite")
+v1 = Highness("Favourite")
 v1.add_items("double seater")
 v1()
 
