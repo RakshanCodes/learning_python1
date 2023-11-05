@@ -25,14 +25,14 @@ class Highness(Bikes):
 
 
 class BMW(Bikes):
-    def __init__(self, name):
-        super(BMW, self).__init__(f"{name} BMW", "Red", 2412, ["BMW"])
+    def __init__(self, name, cost = 2412, color = "Red"):
+        super(BMW, self).__init__(f"{name} BMW", "Red", cost, ["BMW"])
 
 
 v1 = Highness("Favourite")
 v1.add_items("double seater")
 print(v1.items)
 
-v2 = BMW("Second favourite")
+v2 = BMW("Second favourite", color="Green")
 v2.add_items("single seater")
-print(v2.items)
+print(v2.cost)
