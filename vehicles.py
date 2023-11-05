@@ -1,24 +1,16 @@
 class Bikes:
-    def _init_(self, name, color, cost, items):
+    def __init__(self, name, color, cost, items):
         print("_init_", name)
         self.name = name
         self.cost = cost
         self.color = color
-
-    def items(self):
-        return self.items
+        self.items = items
 
     def add_items(self, items):
         self.items.append(items)
 
-    def cost(self):
-        return self.cost
-
-    def name(self):
-        return self.name
-
-    def color(self):
-        return self.color
+    # def cost(self):
+    #     return self.cost
 
 
 class Highness(Bikes):
@@ -29,18 +21,18 @@ class Highness(Bikes):
         super(
             Highness,
             self,
-        )._init_(f"{name} Honda highness", ["Honda"])
+        ).__init__(f"{name} Honda Highness", "Blue", 2312, ["Honda"])
 
 
 class BMW(Bikes):
     def __init__(self, name):
-        super(BMW, self)._init_(f"{name} BMW", ["BMW"])
+        super(BMW, self).__init__(f"{name} BMW", "Red", 2412, ["BMW"])
 
 
 v1 = Highness("Favourite")
 v1.add_items("double seater")
-v1()
+print(v1.items)
 
 v2 = BMW("Second favourite")
 v2.add_items("single seater")
-v2()
+print(v2.items)
