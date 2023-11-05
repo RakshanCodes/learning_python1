@@ -1,6 +1,4 @@
 from cowsay import cow
-from vehicles import BMW
+from vehicles import v2
 
-v = BMW("Dave's Bike")
-
-cow(v.name)
+cow(v2.name)
